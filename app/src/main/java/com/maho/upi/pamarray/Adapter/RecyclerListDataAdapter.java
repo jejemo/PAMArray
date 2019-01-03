@@ -47,9 +47,9 @@ public class RecyclerListDataAdapter extends RecyclerView.Adapter<RecyclerListDa
         myviewHolder.listnama.setText("" + modelListData.get(position).getNama());
         myviewHolder.listPosisi.setText("" + modelListData.get(position).getPosisi());
         myviewHolder.listNegara.setText("" + modelListData.get(position).getNegara());
+        myviewHolder.listNomor.setText("" + modelListData.get(position).getNomor());
 
-        Picasso.with(context).load(modelListData.get(position).getIkon()).into(myviewHolder.listikon);
-        Picasso.with(context).load(modelListData.get(position).getGambar()).into(myviewHolder.listgambar);
+        Picasso.with(context).load(modelListData.get(position).getProfile()).into(myviewHolder.listgambar);
 
     }
 
@@ -62,7 +62,7 @@ public class RecyclerListDataAdapter extends RecyclerView.Adapter<RecyclerListDa
     }
 
     public class MyviewHolder extends RecyclerView.ViewHolder {
-        TextView listnama, listPosisi, listNegara ;
+        TextView listnama, listPosisi, listNegara, listNomor ;
         ImageView listikon, listgambar;
 
         public MyviewHolder(@NonNull View itemView) {
@@ -71,8 +71,8 @@ public class RecyclerListDataAdapter extends RecyclerView.Adapter<RecyclerListDa
             listnama = (TextView) itemView.findViewById(R.id.txtNama);
             listPosisi = (TextView) itemView.findViewById(R.id.txtPosisi);
             listNegara = (TextView) itemView.findViewById(R.id.txtNegara);
-            listikon = (ImageView) itemView.findViewById(R.id.imgIkon);
-            listgambar = (ImageView) itemView.findViewById(R.id.imgThumb);
+            listNomor = (TextView) itemView.findViewById(R.id.txtNopung);
+            listgambar = (ImageView) itemView.findViewById(R.id.imgProfile);
 
 
         }

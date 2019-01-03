@@ -6,21 +6,27 @@ import com.google.gson.annotations.SerializedName;
 public class ModelListData {
     @SerializedName("ikon")
     private String ikon;
-    @SerializedName("gambar")
-    private String  gambar;
+    @SerializedName("profile")
+    private String  profile;
     @SerializedName("nama")
     private String nama;
+    @SerializedName("nomor")
+    private String nomor;
     @SerializedName("posisi")
     private String posisi;
     @SerializedName("negara")
     private String negara;
+    @SerializedName("team")
+    private String tim;
 
-    public ModelListData(String ikon, String gambar, String nama, String posisi, String negara) {
+    public ModelListData(String ikon, String profile, String nama, String nomor, String posisi, String negara, String tim) {
         this.ikon = ikon;
-        this.gambar = gambar;
+        this.profile = profile;
         this.nama = nama;
+        this.nomor = nomor;
         this.posisi = posisi;
         this.negara = negara;
+        this.tim = tim;
     }
 
     public String getIkon() {
@@ -31,12 +37,12 @@ public class ModelListData {
         this.ikon = ikon;
     }
 
-    public String getGambar() {
-        return gambar;
+    public String getProfile() {
+        return profile;
     }
 
-    public void setGambar(String gambar) {
-        this.gambar = gambar;
+    public void setProfile(String profile) {
+        this.profile = profile;
     }
 
     public String getNama() {
@@ -45,6 +51,14 @@ public class ModelListData {
 
     public void setNama(String nama) {
         this.nama = nama;
+    }
+
+    public String getNomor() {
+        return nomor;
+    }
+
+    public void setNomor(String nomor) {
+        this.nomor = nomor;
     }
 
     public String getPosisi() {
@@ -61,5 +75,13 @@ public class ModelListData {
 
     public void setNegara(String negara) {
         this.negara = negara;
+    }
+
+    public String getTim() {
+        return tim;
+    }
+
+    public void setTim(String tim) {
+        this.tim = tim;
     }
 }

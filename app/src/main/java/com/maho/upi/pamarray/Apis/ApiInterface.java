@@ -10,6 +10,6 @@ import retrofit2.http.GET;
 @SuppressWarnings("ALL")
 public interface ApiInterface {
 
-    @GET("bins/xavu8")
+    @GET("bins/96w8c")
     Call<List<ModelListData>> ambildata();
 }
